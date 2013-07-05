@@ -1,8 +1,15 @@
+body
+{
+  font-size:10px;
+}
+
 /*header*/
 #header
 {
+  height:80px;
+  background-color:#00f;
+  background-color:#f0f0f0;
 }
-
 #hello
 {
   display:none;
@@ -13,15 +20,83 @@
 /*menu bar*/
 #awesomeness-bar
 {
-  
+  /*background-color:#ff007f;*/
+  height:300px;
+  width:16%;
+  float:left;
+  display:inline-block;
 }
 
+#menu
+{
+  padding:0px;
+  overflow:auto;
+  width:auto;
+  height:auto;
+  list-style-type:none;
+}
+
+.menu-item
+{
+  padding:5px;
+  font-size:1.2em;
+ border-width:2px;
+   border-top:  solid #f0f0f0 thin;
+    border-bottom: solid #e8e8e8 thin;
+}
+
+
+.menu-item:hover
+{
+ /* background:#09c;*/
+ background:whitesmoke;
+ border-style:  outset; 
+}
+/*
+.menu-item:first-child
+{
+  border-top:0px;
+}
+
+.menu-item:last-child
+{
+  border-bottom:0px;
+}
+*/
+
+.active
+{
+  /*background:#00f;*/
+ border-left: solid #f00 thick;
+  color:red;
+}
+
+#main
+{
+  border:0px;
+  padding:0px;
+}
 /*content*/
 #content
 {
+  height:300px;
+  width:84%;
+  background-color:#ff0;
+  
+  background-color:#e8e8e8;
+  display:inline-block;
 }
 
 /*footer*/
 #footer
 {
+  height:60px;
+  background-color:#00ff7f;
+  background-color:#f0f0f0;
+}
+
+.center
+{
+  margin-left:auto;
+  margin-right:auto;
 }
