@@ -1,6 +1,6 @@
 body
 {
-  font-size:10px;
+  font-size:14px;
 }
 
 /*header*/
@@ -63,14 +63,12 @@ body
   border-bottom:0px;
 }
 */
-
 .active
 {
   /*background:#00f;*/
  border-left: solid #f00 thick;
   color:red;
 }
-
 #main
 {
   border:0px;
@@ -94,7 +92,6 @@ body
   background-color:#00ff7f;
   background-color:#f0f0f0;
 }
-
 .center
 {
   margin-left:auto;
