@@ -1,14 +1,24 @@
 body
 {
   font-size:14px;
+  width:1024px;
 }
 
 /*header*/
 #header
 {
   height:80px;
+  /*
   background-color:#00f;
   background-color:#f0f0f0;
+  */
+  border-bottom: solid #f0f0f0 thin;
+}
+#title
+{
+  text-align:center;
+  font-size:2.4em;
+  padding-top:16px;
 }
 #hello
 {
@@ -20,8 +30,10 @@ body
 /*menu bar*/
 #awesomeness-bar
 {
-  /*background-color:#ff007f;*/
-  height:300px;
+  /*background-color:#ff007f;
+  height:400px; 
+  */
+  
   width:16%;
   float:left;
   display:inline-block;
@@ -43,6 +55,7 @@ body
  border-width:2px;
    border-top:  solid #f0f0f0 thin;
     border-bottom: solid #e8e8e8 thin;
+    cursor:default;
 }
 
 
@@ -50,9 +63,8 @@ body
 {
  /* background:#09c;*/
  background:whitesmoke;
- border-style:  outset; 
+ /*border-style:  outset; */
 }
-/*
 .menu-item:first-child
 {
   border-top:0px;
@@ -62,7 +74,6 @@ body
 {
   border-bottom:0px;
 }
-*/
 .active
 {
   /*background:#00f;*/
@@ -77,21 +88,32 @@ body
 /*content*/
 #content
 {
-  height:300px;
+  height:400px;
   width:84%;
-  background-color:#ff0;
-  
+  /*background-color:#ff0;
   background-color:#e8e8e8;
+  */
   display:inline-block;
 }
 
-/*footer*/
-#footer
+#content p
 {
-  height:60px;
-  background-color:#00ff7f;
-  background-color:#f0f0f0;
+  
+  border-left: solid #f0f0f0 thin;
+  padding:20px;
+  font-size:1.2em;
 }
+
+/*footer*/
+
+#footer{
+  height:80px;
+  /*background-color:#00ff7f;
+  background-color:#f0f0f0;
+  */
+    border-top: solid #e8e8e8 thin;
+}
+
 .center
 {
   margin-left:auto;
