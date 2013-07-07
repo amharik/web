@@ -10,7 +10,7 @@
   <div id='header'>
     <!--<div id='hello' onclick='return test_sayHello()'>Test Hello func!</div>-->
    <div id='title'>
-    #header content goes here
+   INFI LITE
     </div>
   </div>
   
@@ -27,11 +27,11 @@
   </div>
   
   <div id='content'>
-  <p>
+  <p id='el_diablo'>
   #some long content here.
   </p>
   </div>
-  <script type='text/javascript' src='defer.js'></script>
+  <script type='text/javascript' src='defer.js' defer></script>
   </div>
   
   <div id='footer'>
