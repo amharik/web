@@ -60,13 +60,13 @@ IBEAM.pages=[];
 
 IBEAM.ui.progress=0;
 IBEAM.ui.WIDTH=1024;
-IBEAM.ui.PARTITION=256;
+IBEAM.ui.GET_PARTITION=function(){return (IBEAM.ui.WIDTH/IBEAM.pages.length)};
 IBEAM.ui.progress=0;
 IBEAM.ui.counter=0;
 IBEAM.ui.incrementProgress=function()
 {
    var progress=IBEAM.id('progress');
-   IBEAM.ui.progress+=IBEAM.ui.PARTITION;
+   IBEAM.ui.progress+=IBEAM.ui.GET_PARTITION();
    if(IBEAM.ui.progress <IBEAM.ui.WIDTH)
    {
      progress.style.width=IBEAM.ui.progress;
@@ -94,10 +94,8 @@ IBEAM.namespace('helper').loadPage=function(page){
 	script.src = page+".json";
 	document.body.appendChild(script);
 	DEBUG.print('loadPage: PAGE LOADED FROM NET');
+	IBEAM.ui.incrementProgress();
       }
-    
-    IBEAM.ui.incrementProgress();
-    
 }
 // callback
 IBEAM.namespace('helper').generateRender=function(page){

@@ -36,7 +36,6 @@ body
 {
   -webkit-transition:width 1s linear;
 }
-
 .reset
 {
  -webkit-transition:width 0s ease-in;
@@ -113,22 +112,21 @@ body
 /*content*/
 #content
 {
-  height:400px;
+  height:500px;
   width:84%;
   /*background-color:#ff0;
   background-color:#e8e8e8;
   */
   display:inline-block;
+  overflow:auto;
 }
-
-#content p
+#el_diablo
 {
-  
   border-left: solid #f0f0f0 thin;
   padding:20px;
   font-size:1.2em;
+  text-align: justify;
 }
-
 /*footer*/
 
 #footer{
@@ -138,7 +136,6 @@ body
   */
     border-top: solid #e8e8e8 thin;
 }
-
 #bottomline
 {
   text-align:right;

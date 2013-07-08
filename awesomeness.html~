@@ -8,7 +8,6 @@
 
 <body class='center'>
   <div id='header'>
-    <!--<div id='hello' onclick='return test_sayHello()'>Test Hello func!</div>-->
    <div id='title'>INFI LITE <div class='smile'>:)</div></div>
    <div id='infibar'>
    <div id='progress' class='animate'></div>
@@ -23,6 +22,7 @@
   <li class='menu-item'>Projects</li>
   <li class='menu-item'>Help</li>
   <li class='menu-item'>Contact</li>
+  <li class='menu-item'>Say Cheese</li>
   </ul>
   </div>
   
