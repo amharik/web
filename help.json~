@@ -1,1 +1,3 @@
-IBEAM.render.help({help:"Help page Dynnamic contents loaded using JSONP"});
+var json_data = {help:"Help page Dynnamic contents loaded using JSONP"}
+
+IBEAM.render.help();

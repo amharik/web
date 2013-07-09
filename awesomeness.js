@@ -35,11 +35,6 @@ IBEAM.namespace= function (namespace_str){
   }
   return parent;
 }
-IBEAM.namespace('ui');
-IBEAM.namespace('datastore');
-IBEAM.namespace('render');
-IBEAM.namespace('util')
-
 // utils
 IBEAM.id= function(nodeId){
   return document.getElementById(nodeId);
@@ -47,22 +42,39 @@ IBEAM.id= function(nodeId){
 IBEAM.class = function (nodeClass){
   return document.getElementsByClassName(nodeClass);
 }
-IBEAM.ui.activate=function(menu)
-{     var menuItemList = IBEAM.class('active');
+IBEAM.query= function (queryString, returnSingle){
+  return (returnSingle)?document.querySelector(queryString):document.querySelectorAll(queryString);
+}
+IBEAM.namespace('ui');
+IBEAM.namespace('datastore');
+IBEAM.namespace('render');
+IBEAM.namespace('helper');
+
+IBEAM.ui.activate=function(menu,fromClass)
+{
+  var menuItemList = IBEAM.class(fromClass);
       for (var i=0;i<menuItemList.length;i++)
       {
-      menuItemList[i].classList.remove('active');
+      menuItemList[i].classList.remove(fromClass);
       }
-      menu.classList.add('active');
+      menu.classList.add(fromClass);
 }
-IBEAM.ui.switch=true;
+  IBEAM.datastore.offlineAchievedCallback=function()
+  {
+    IBEAM.id('container').classList.add('offline');
+  }  
+// self defining function pattern
+IBEAM.datastore.offlineAchieved=function()
+{
+  IBEAM.datastore.offlineAchievedCallback();
+  IBEAM.datastore.offlineAchieved=function (){DEBUG.print("offline ACHIEVED already, i'm going to sleep");};
+}
+// populated automatically based on 'menu-item' class
 IBEAM.pages=[];
-
 IBEAM.ui.progress=0;
 IBEAM.ui.WIDTH=1024;
 IBEAM.ui.GET_PARTITION=function(){return (IBEAM.ui.WIDTH/IBEAM.pages.length)};
-IBEAM.ui.progress=0;
-IBEAM.ui.counter=0;
+
 IBEAM.ui.incrementProgress=function()
 {
    var progress=IBEAM.id('progress');
@@ -74,19 +86,19 @@ IBEAM.ui.incrementProgress=function()
    else
    {
      progress.style.width=IBEAM.ui.WIDTH;
+     IBEAM.datastore.offlineAchieved();
    }
-}
+}/*
 IBEAM.ui.resetProgress=function()
 {
    progress.style.width=0;
-}
+}*/
 // request
-IBEAM.namespace('helper').loadPage=function(page){
-   
-//   IBEAM.ui.resetProgress();
-   
+IBEAM.helper.loadPage=function(page){
       if(IBEAM.datastore[page]){
-	IBEAM.render[page]();
+// 	IBEAM.render[page]();
+	// PATTERN
+	IBEAM.id('el_diablo').innerHTML=IBEAM.datastore[page];
 	DEBUG.print('loadPage: PAGE LOADED FROM DATASTORE');
       }
       else{
@@ -96,17 +108,22 @@ IBEAM.namespace('helper').loadPage=function(page){
 	DEBUG.print('loadPage: PAGE LOADED FROM NET');
 	IBEAM.ui.incrementProgress();
       }
+//       IBEAM.ui.incrementProgress();
 }
 // callback
-IBEAM.namespace('helper').generateRender=function(page){
+IBEAM.helper.generateRender=function(page){
   return(
     function(jsonp_data){
-      if(jsonp_data){
 	DEBUG.print(jsonp_data[page]);
 	IBEAM.datastore[page]=jsonp_data[page];
-      }
-      IBEAM.id('el_diablo').innerHTML=IBEAM.datastore[page];
+	// PATTERN
+	IBEAM.id('el_diablo').innerHTML=IBEAM.datastore[page];
     });
+}
+
+IBEAM.helper.spaceEater=function(stringWithSpace,substitute)
+{
+  return (substitute)?stringWithSpace.replace(" ", substitute):stringWithSpace.replace(" ", "");
 }
 // test
 IBEAM.namespace('test.hello').sayHello=function(){

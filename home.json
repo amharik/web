@@ -1,1 +1,2 @@
-IBEAM.render.home({home:"Home page Dynnamic contents loaded using JSONP"});
+var json_data = {home:"Home page Dynnamic contents loaded using JSONP"}
+IBEAM.render.home(json_data);

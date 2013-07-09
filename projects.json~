@@ -1,1 +1,3 @@
-IBEAM.render.projects({projects:'Projects page Dynnamic contents loaded using JSONP'});
+var json_data = {projects:"Projects page Dynnamic contents loaded using JSONP"};
+
+IBEAM.render.projects(json_data);

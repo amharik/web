@@ -1,7 +1,9 @@
-body
+#container
 {
   font-size:14px;
   width:1024px;
+ border-left: solid #f0f0f0 thin;
+  border-right: solid #f0f0f0 thin;
 }
 #header
 {
@@ -46,6 +48,7 @@ body
   text-align:center;
   font-size:2.4em;
   padding-top:16px;
+  height:60px;
 }
 #title .smile
 {
@@ -62,6 +65,7 @@ body
   height:400px; 
   */  
   width:16%;
+  height:100%;
   float:left;
   display:inline-block;
 }
@@ -86,7 +90,7 @@ body
 .menu-item:hover
 {
  /* background:#09c;*/
- background:whitesmoke;
+ background:#ebebeb;
  /*border-style:  outset; */
 }
 .menu-item:first-child
@@ -102,17 +106,19 @@ body
 {
   /*background:#00f;*/
  border-left: solid #f00;
+ background:whitesmoke;
   color:red;
 }
 #main
 {
   border:0px;
   padding:0px;
+  height:500px;
 }
 /*content*/
 #content
 {
-  height:500px;
+  height:100%;
   width:84%;
   /*background-color:#ff0;
   background-color:#e8e8e8;
@@ -124,22 +130,39 @@ body
 {
   border-left: solid #f0f0f0 thin;
   padding:20px;
+  margin:10px 0px 10px 0px;
   font-size:1.2em;
   text-align: justify;
 }
 /*footer*/
 
 #footer{
-  height:80px;
+  height:70px;
   /*background-color:#00ff7f;
   background-color:#f0f0f0;
   */
-    border-top: solid #e8e8e8 thin;
+  border-top: solid #e8e8e8 thin;
+}
+#description
+{
+  margin:10px 0px;
+  font-size:1em;
+  display:inline-block;
+  padding:0px 20px;
+  width:73%;
+  height:auto;
+  vertical-align: top;
 }
 #bottomline
 {
-  text-align:right;
-  font-size:0.8em;
+  font-size:1em;
+  margin:10px 0px;
+  display:inline-block;
+  width:22%;
+  height:auto;
+  border:0px;
+  vertical-align: top;
+  background:#F5F5F5;
 }
 #bottomline a
 {
@@ -148,11 +171,12 @@ body
   display:inline-block;
   width:40px;
   text-align:center;
+  border-bottom:solid transparent thin;
 }
 #bottomline a:hover
 {
-  background:whitesmoke;
   border-bottom:solid #09f thin;
+  background:#EBEBEB;
 }
 a
 {
@@ -169,6 +193,37 @@ a:hover
 }
 .center
 {
-  margin-left:auto;
-  margin-right:auto;
+  margin:0px auto 0px auto;
+}
+.offline
+{
+  /*
+  -webkit-box-shadow:  1px 1px 2px 2px #2CE867;
+  
+        box-shadow:  1px 1px 2px 2px #2CE867;
+	-moz-box-shadow:  1px 1px 2px 2px #2CE867;*/
+}
+.offline #header #title
+{
+  background:#cbffcb;
+}
+#description
+{
+  list-style-type: none;
+  -webkit-transition:left 1s ease-in;
+}
+#description li
+{
+  display:none;
+  left:1024px;
+}
+.show
+{
+  display:inline-block !important;
+  left:0px;
+}
+.hide
+{
+  display:none;
+  left:1024px;
 }
