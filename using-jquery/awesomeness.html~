@@ -1,25 +1,19 @@
 <html>
-
 <head>
   <title> Awesomeness </title>
   <link rel='stylesheet' type='text/css' href='style/awesomeness.css'>
-  <!--<script type='text/javascript' src='awesomeness.js'>-->
   <script type='text/javascript' src='script/jquery-2.0.3.js'>
   </script>
 </head>
-
 <body>
   <div id='container'  class='center'>
+  
   <div id='header'>
-   <div id='title'>INFI LITE <div class='smile'>:)</div></div>
-   <div id='infibar'>
-   <div id='progress' class='animate'></div>
-   </div>
+  <div id='title'>INFI LITE  <div class='smile'>:)</div>  </div>
   </div>
   
   <div id='main'>
   <div id='awesomeness-bar'>
-  <!--#awesomeness-bar waiting!-->
   <ul id='menu'>
   <li class='menu-item active'>Home</li>
   <li class='menu-item'>Projects</li>
@@ -32,52 +26,72 @@
   <div id='content'>
   <ul id='el_diablo'>
   <li id='home' class='show'>
-  Home page Dynnamic contents loaded using JSONP
+  <h3>Intro</h3>
+      So, while I might be preaching to the choir here, we're going to take a quick look at why a developer might choose to use jQuery. My point in doing this is to foster your basic knowledge of jQuery by first explaining the "why" before we look at the "how."
   </li>
   <li id='projects'>
-  Projects page Dynnamic contents loaded using JSONP
+  <h3>Here is a list of attributes that builds a case for why you should use jQuery:</h3>
+      1. It's open source, and the project is licensed under an MIT and a GNU General Public License (GPL) license. It's free, yo, in multiple ways!<br>
+      2. It's small (18 KB minified) and gzipped (114 KB, uncompressed).<br>
+      3. It's incredibly popular, which is to say it has a large community of users and a healthy amount of contributors who participate as developers and evangelists.<br>
+      4. It normalizes the differences between web browsers so that you don't have to.<br>
+      5. It's intentionally a lightweight footprint with a simple yet clever plugin architecture.<br>
+      6. Its repository of plugins is vast and has seen steady growth since jQuery's release.<br>
+      7. Its API is fully documented, including inline code examples, which in the world of JavaScript libraries is a luxury. Heck, any documentation at all was a luxury for years.<br>
+      8. It's friendly, which is to say it provides helpful ways to avoid conflicts with other JavaScript libraries.<br>
   </li>
   <li id='help'>
-  Help page Dynnamic contents loaded using JSONP
+  <h3>The jQuery Philosophy</h3>
+      The jQuery philosophy is “Write less, do more.” This philosophy can be further broken down into three concepts:<br>
+      1. Finding some elements (via CSS selectors) and doing something with them (via jQuery methods)<br>
+      2. Chaining multiple jQuery methods on a set of elements<br>
+      3. Using the jQuery wrapper and implicit iteration<br>
   </li>
   <li id='contact'>
-  contact page Dynnamic contents loaded using JSONP
+  <h3>How to Contact Us</h3>
+      Please address comments and questions concerning this book to the publisher:<br>
+      Mass Media, Inc.<br>
+      1024 MB Gigastein Bank North<br>
+      Sebastopol, CA 95472<br>
+      800-998-xxxx (in the United States or Canada)<br>
+      707-xxxx-0515 (international or local)<br>
+      xxx-829-0104 (fax)<br>
   </li>
   <li id='saycheese'>
-  <H3>Education Starts At Home</H3>
-  During a science lesson, my sister-in-law picked up a magnet and said to her second-grade class, "My name begins with the letter M, and I pick things up. What am I?" A little boy answered, "You're a mommy."<br>
-  -Robert Boyer, Marion, Indiana<br>
-  <H3>Knowing the Territory</H3>
-  It was my friend's first camping trip with her husband, and they were lost. He tried all the usual tactics to determine direction-moss on the trees (there was none), direction of the sun (it was overcast), and so on. Just as she began to panic, he spotted a cabin in the distance.<br>
-  "This way, " he said as he led her back to their camp.<br>
-  "How did you do that?" my friend asked.<br>
-  "Simple. In this part of the country, the satellite dishes point south."
+      <H3>Education Starts At Home</H3>
+	During a science lesson, my sister-in-law picked up a magnet and said to her second-grade class, "My name begins with the letter M, and I pick things up. What am I?" A little boy answered, "You're a mommy."<br>
+	-Robert Boyer, Marion, Indiana<br>
+      <H3>Knowing the Territory</H3>
+	It was my friend's first camping trip with her husband, and they were lost. He tried all the usual tactics to determine direction-moss on the trees (there was none), direction of the sun (it was overcast), and so on. Just as she began to panic, he spotted a cabin in the distance.<br>
+	"This way, " he said as he led her back to their camp.<br>
+	"How did you do that?" my friend asked.<br>
+	"Simple. In this part of the country, the satellite dishes point south."
   </li>
   </ul>
-  <script type='text/javascript' src='script/defer.js' defer></script>
   </div>
   
   <div id='footer'>
   <ul id='description'>
   <li id="info" class ="show">
-  click on the link to show details in this pane ----->
+  >------------------------------click on the link to show details in this pane ------------------------>
   </li>
   <li id="html">
-  * HyperText Markup Language (HTML) is the main markup language for creating web pages and other information that can be displayed in a web browser
+    HyperText Markup Language (HTML) is the main markup language for creating web pages and other information that can be displayed in a web browser
   </li>
   <li id="css">
-  * Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation semantics (the look and formatting) of a document written in a markup language
+    Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation semantics (the look and formatting) of a document written in a markup language
   </li>
   <li id="js">
-  * JavaScript (JS) is an interpreted computer programming language.[5] It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
+    JavaScript (JS) is an interpreted computer programming language.[5] It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed.
   </li>
   <li id="jsonp">
-  * JSONP or "JSON with padding" is a communication technique used in JavaScript programs which run in Web browsers. It provides a method to request data from a server in a different domain, something prohibited by typical web browsers because of the same origin policy
+    JSONP or "JSON with padding" is a communication technique used in JavaScript programs which run in Web browsers. It provides a method to request data from a server in a different domain, something prohibited by typical web browsers because of the same origin policy
   </li>
   <li id="ux">
-  * User experience design (UXD or UED) is any aspect of a user's experience with a given system, including the interface, graphics, industrial design, physical interaction, and the manual.
+    User experience design (UXD or UED) is any aspect of a user's experience with a given system, including the interface, graphics, industrial design, physical interaction, and the manual.
   </li>
   </ul>
+  
   <ul id='bottomline'>
   <li class='menu-item'>HTML</li>
   <li class='menu-item'>CSS</li>
@@ -86,6 +100,8 @@
   <li class='menu-item'>UX</li>
   </ul>
   </div>
+  
   </div>
+  <script type='text/javascript' src='script/defer.js' defer></script>
 </body>
 </html>
