@@ -1,0 +1,2 @@
+var json_data = {contact:"contact page Dynnamic contents loaded using JSONP"}
+IBEAM.render.contact(json_data);
