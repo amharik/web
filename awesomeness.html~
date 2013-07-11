@@ -3,7 +3,9 @@
 <head>
   <title> Awesomeness </title>
   <link rel='stylesheet' type='text/css' href='awesomeness.css'>
-  <script type='text/javascript' src='awesomeness.js'></script>
+  <script type='text/javascript' src='awesomeness.js'>
+  </script>
+  <script>alert('hi');</script>
 </head>
 
 <body>

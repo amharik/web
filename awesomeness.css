@@ -21,13 +21,6 @@
   border:0px;
   border-bottom: solid #f0f0f0 thin;
 }
-#progress-alter
-{
-  background:whitesmoke;
-  height:100%;
-/*   display:inline-block; */
-   width:0px;
-}
 #progress
 {
   background:#0f0;
@@ -38,11 +31,6 @@
 {
   -webkit-transition:width 1s linear;
 }
-.reset
-{
- -webkit-transition:width 0s ease-in;
-}
-
 #title
 {
   text-align:center;

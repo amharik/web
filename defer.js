@@ -1,4 +1,5 @@
 var menuItems = IBEAM.class("menu-item");
+
 for (var i=0;i<menuItems.length;i++){
   IBEAM.pages[i]=IBEAM.helper.spaceEater(menuItems[i].innerHTML.toLowerCase(), "_");
   menuItems[i].onclick=function(event){
@@ -11,8 +12,9 @@ for (var i=0;i<menuItems.length;i++){
   IBEAM.render[IBEAM.pages[i]]=IBEAM.helper.generateRender(IBEAM.pages[i]);
 }
 IBEAM.helper.loadPage('home');
-var footerMenuItems = IBEAM.query('#container #footer #bottomline a');
 
+
+var footerMenuItems = IBEAM.query('#container #footer #bottomline a');
 for (var i=0;i<footerMenuItems.length;i++){
   
   DEBUG.print(IBEAM.helper.spaceEater(footerMenuItems[i].innerHTML.toLowerCase(), "_"));

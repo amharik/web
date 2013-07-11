@@ -1,4 +1,5 @@
 var menuItems = IBEAM.class("menu-item");
+
 for (var i=0;i<menuItems.length;i++){
   IBEAM.pages[i]=IBEAM.helper.spaceEater(menuItems[i].innerHTML.toLowerCase(), "_");
   menuItems[i].onclick=function(event){
@@ -16,6 +17,8 @@ var footerMenuItems = IBEAM.query('#container #footer #bottomline a');
 for (var i=0;i<footerMenuItems.length;i++){
   
   DEBUG.print(IBEAM.helper.spaceEater(footerMenuItems[i].innerHTML.toLowerCase(), "_"));
+  
+  
   footerMenuItems[i].onclick = function(event)
   {
     item = IBEAM.helper.spaceEater(this.innerHTML.toLowerCase(), "_");
