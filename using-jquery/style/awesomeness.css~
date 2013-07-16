@@ -28,10 +28,12 @@
 /*menu bar*/
 #awesomeness-bar
 {
-  width:16%;
+  width:164px;
   height:100%;
-  float:left;
+  /*float:left;*/
   display:inline-block;
+  
+  vertical-align: top;
 }
 #menu
 {
@@ -78,9 +80,11 @@
 #content
 {
   height:100%;
-  width:84%;
+  width:650px;
   display:inline-block;
   overflow:auto;
+  
+  vertical-align: top;
 }
 #el_diablo
 {
@@ -99,6 +103,39 @@
 #el_diablo li.show
 {
   display:inline-block;
+}
+
+#updates
+{
+  display:inline-block;
+  width:200px;
+  height:100%;
+  overflow:auto;
+  border-left: solid #f0f0f0 thin;
+  background:whitesmoke;
+}
+.update-item
+{
+  text-align:justify;
+  display:inline-block;
+  padding:10px 5px 10px 5px;
+  border: solid transparent thin;
+  margin:0px;
+  height:auto;
+  width:auto;
+  cursor:default;
+}
+.update-item:hover
+{
+  border: solid #89D0E6 thin;
+  background:white;
+}
+
+.update-item h4
+{
+  color:#4e99d9;
+  margin-top:10px;
+  margin-bottom:10px;
 }
 /*footer*/
 

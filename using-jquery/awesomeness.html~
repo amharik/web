@@ -22,14 +22,12 @@
   <li class='menu-item'>SayCheese</li>
   </ul>
   </div>
-  
   <div id='content'>
   <ul id='el_diablo'>
   <li id='home' class='show'>
   <h3>Intro</h3>
       So, while I might be preaching to the choir here, we're going to take a quick look at why a developer might choose to use jQuery. My point in doing this is to foster your basic knowledge of jQuery by first explaining the "why" before we look at the "how."
-  </li>
-  <li id='projects'>
+  </li><li id='projects'>
   <h3>Here is a list of attributes that builds a case for why you should use jQuery:</h3>
       1. It's open source, and the project is licensed under an MIT and a GNU General Public License (GPL) license. It's free, yo, in multiple ways!<br>
       2. It's small (18 KB minified) and gzipped (114 KB, uncompressed).<br>
@@ -39,15 +37,13 @@
       6. Its repository of plugins is vast and has seen steady growth since jQuery's release.<br>
       7. Its API is fully documented, including inline code examples, which in the world of JavaScript libraries is a luxury. Heck, any documentation at all was a luxury for years.<br>
       8. It's friendly, which is to say it provides helpful ways to avoid conflicts with other JavaScript libraries.<br>
-  </li>
-  <li id='help'>
+  </li><li id='help'>
   <h3>The jQuery Philosophy</h3>
       The jQuery philosophy is “Write less, do more.” This philosophy can be further broken down into three concepts:<br>
       1. Finding some elements (via CSS selectors) and doing something with them (via jQuery methods)<br>
       2. Chaining multiple jQuery methods on a set of elements<br>
       3. Using the jQuery wrapper and implicit iteration<br>
-  </li>
-  <li id='contact'>
+  </li><li id='contact'>
   <h3>How to Contact Us</h3>
       Please address comments and questions concerning this book to the publisher:<br>
       Mass Media, Inc.<br>
@@ -56,8 +52,7 @@
       800-998-xxxx (in the United States or Canada)<br>
       707-xxxx-0515 (international or local)<br>
       xxx-829-0104 (fax)<br>
-  </li>
-  <li id='saycheese'>
+  </li><li id='saycheese'>
       <H3>Education Starts At Home</H3>
 	During a science lesson, my sister-in-law picked up a magnet and said to her second-grade class, "My name begins with the letter M, and I pick things up. What am I?" A little boy answered, "You're a mommy."<br>
 	-Robert Boyer, Marion, Indiana<br>
@@ -69,7 +64,22 @@
   </li>
   </ul>
   </div>
-  
+  <div id='updates'>
+  <span class='update-item'>
+  <h4>Call for Proposals</h4>
+We're looking for speakers who can bring a broad array of perspectives on subjects that cross the spectrum of technologies that are used in tandem with jQuery every day.
+  </span>
+  <span class='update-item'>
+  <h4>Pre-Conference Training</h4>
+If you're looking to understand how to become a better developer and leverage newer features in jQuery, Bocoup's jQuery Essentials course on Monday, September 9 is just such an opportunity.
+  </span>
+  <span class='update-item'>
+  <h4>See You There!</h4>
+We're thrilled to be adding some southwestern flavor to #jqcon.
+  </span>
+  <span class='update-item'>
+  </span>
+  </div>
   <div id='footer'>
   <ul id='description'>
   <li id="info" class ="show">
